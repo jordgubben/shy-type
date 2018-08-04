@@ -1,0 +1,27 @@
+{
+  "name": "shy-type",
+  "version": "0.0.0",
+  "description": "A minimal runtime type safety library. ",
+  "main": "src/shy-type.js",
+  "scripts": {
+    "test": "mocha -R nyan src/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordgubben/shy-type.git"
+  },
+  "keywords": [
+    "type-safety",
+    "amd"
+  ],
+  "author": "Jakob Eklund",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jordgubben/shy-type/issues"
+  },
+  "homepage": "https://github.com/jordgubben/shy-type#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
