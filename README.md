@@ -40,10 +40,12 @@ var manhattanDistance = type.num(x + y)
 
 Hints can improve debugging. Know what went wrong, and not just where.
 ```js
-// Passing check with hint (returns value, ignoring hint)
+// Passing check with hint 
+// (returns value, ignoring hint)
 type.str("George", "Name of great mathematician")
 
-// Failing check with hint (throws TypeError with hint included in message)
+// Failing check with hint 
+// (throws TypeError "User id in DB - Expected 'George' to be a number")
 type.int("George", "User id in DB")
 ```
 
