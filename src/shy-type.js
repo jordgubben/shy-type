@@ -5,7 +5,7 @@
 	} else if (typeof module == 'object' && module.exports) {
 		module.exports = factory();
 	} else {
-		global.util = factory();
+		global.shyType = factory();
 	}
 })(this, function() {
 	"use strict";

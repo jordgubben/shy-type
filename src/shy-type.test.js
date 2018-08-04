@@ -1,15 +1,18 @@
 (function (){
-//Load typeule and assert lib
+
 var type, expect;
 if (typeof window === 'undefined') {
 	type = require("./shy-type.js");
 	expect = require("chai").expect;
-} else {
+} else if (typeof require === 'function' ) {
 	before(function (done) {
 		require(["shy-type", "chai"], function (_type, _chai) {
 			type = _type; expect = _chai.expect; done();
 		});
 	});
+} else {
+	type = window.shyType;
+	expect = window.chai.expect;
 }
 
 //Tests
