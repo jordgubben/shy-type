@@ -117,22 +117,6 @@
 		}
 	}
 
-
-	/**
-	 * Verify that a value it the instance of some type (constructor).
-	 */
-	function isA(type) {
-		return function(value, hint){
-			if(value instanceof type) {
-				return value;
-			} else {
-				throw new TypeError(
-					(hint ? hint + " - " : "") + 
-					"Expected \'" + value + "\' to be an instance of \'" + type +"\'");
-			}
-		}
-	}
-
 	return {
 			bool: bool,
 			int: int,
@@ -140,8 +124,7 @@
 			str: str,
 			obj: obj,
 			fun: fun,
-			arr: arr,
-			isA: isA
+			arr: arr
 		}
 
 });
