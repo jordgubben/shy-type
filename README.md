@@ -7,6 +7,7 @@ Scenarios where types can not be determined before runtime are also good user ca
 Form validation is however not something it is designed for, 
 as error messages are focused beeing programmer friendly (i.e. not end user friendly).
 
+The library ha no dependencies and is very small. It runs both node and browsers.
 
 ## Checks
 
