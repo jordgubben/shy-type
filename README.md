@@ -1,11 +1,11 @@
 # shy-type
 Shy-type is a minimal runtime type safety library for javascript.
 
-It's mainly intended for user cases where bigger robuster solutions,
+It's mainly intended for user cases where bigger more robust solutions,
 like [Flow](https://flow.org/) or [Typescript](https://www.typescriptlang.org/), are not feasible. 
 Scenarios where types can not be determined before runtime are also good user cases.
 Form validation is however not something it is designed for, 
-as error messages are focused beeing programmer friendly (i.e. not end user friendly).
+as error messages are focused on being programmer friendly (i.e. not end user friendly).
 
 The library has no dependencies and is very small. It runs in both node and most browsers.
 
@@ -24,7 +24,7 @@ Shy has checker functions for all the basic javascipt types:
 
 ## Example
 
-Checkers take the value to check as theor first (and only obligatory) argument.
+Checkers take the value to check as the first (and only obligatory) argument.
 ```js
 // Passing check
 type.bool(true)
@@ -38,7 +38,7 @@ Checks return the value. This simplifies checking results of calculation.
 var manhattanDistance = type.num(x + y)
 ```
 
-Adding hints can improve solving bugs. Know what check failed, even after minifcation.
+Adding hints can improve solving bugs. Know which check failed, even after minification.
 ```js
 // Passing check with hint 
 // (returns value, ignoring hint)
@@ -66,9 +66,11 @@ function fibonacci(n) {
 }
 ```
 
-Use destructuring assignment is you prefer compact calls.
+Use destructuring assignment if you prefer compact calls.
 ```js
 // Optional shorter names
 const {bool, int, num, str, fun, obj, arr} = require('shy-type')
+
+bool(true, "George?");
 
 ``` 
