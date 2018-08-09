@@ -1,6 +1,6 @@
 {
   "name": "shy-type",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A minimal runtime type safety library. ",
   "main": "src/shy-type.js",
   "scripts": {
